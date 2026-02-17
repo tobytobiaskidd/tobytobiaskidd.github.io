@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Blossom – Toby Tobias Kidd">
+  <title>The Blossom – Toby Tobias Kidd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="../index.html" class="site-name">Toby Tobias Kidd</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../work.html" class="active">Selected Work</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <div class="project-header">
+        <h1 class="project-title">The Blossom</h1>
+        <p class="project-year">Single-channel video with audio, 8:28</p>
+      </div>
+
+      <div class="project-grid">
+        <img src="../images/blossom.jpg" alt="The Blossom installation view">
+        <img src="../images/thirstyblossom.png" alt="The Blossom video still">
+        <img src="../images/piartworksnames.png" alt="Pi Artworks exhibition">
+      </div>
+
+      <div class="project-description">
+        <p>
+          <em>The Blossom</em> is a single-channel video work structured as a dialogue between voices from different historical moments, reflecting on the meaning of a house and a home. Through spoken exchange, the work considers what it means to use, inhabit, own, and exist within space, and how these conditions are shaped by time and by cohabitation with others.
+        </p>
+        <p>
+          Presented as part of EXTROSPECTION, curated by David Thorp at Pi Artworks during Frieze London, the work situates contemporary concerns within a lineage of conceptual practice, foregrounding language, temporality, and the social structures embedded in everyday environments.
+        </p>
+      </div>
+
+      <div class="media-block">
+        <p class="media-block-caption">Video excerpt from The Blossom, Pi Artworks, curated by David Thorp (2023). Sound on. Full video available on request.</p>
+        <video controls preload="none">
+          <source src="../video/extrospection-excerpt.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </div>
+
+      <script>
+        // Pause other audio/video when one plays
+        document.addEventListener('play', function(e) {
+          const media = document.querySelectorAll('audio, video');
+          media.forEach(function(el) {
+            if (el !== e.target) el.pause();
+          });
+        }, true);
+      </script>
+
+      <p class="project-context">
+        
+      </p>
+
+      <a href="../work.html" class="back-link">Back to Selected Work</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; Toby Tobias Kidd</p>
+    </footer>
+  </div>
+</body>
+</html>

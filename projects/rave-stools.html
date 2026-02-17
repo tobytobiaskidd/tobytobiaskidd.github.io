@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lift Your Hands and Voices – Toby Tobias Kidd">
+  <title>Lift Your Hands And Voices – Toby Tobias Kidd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="site-container">
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="../index.html" class="site-name">Toby Tobias Kidd</a>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../work.html" class="active">Selected Work</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <div class="project-header">
+        <h1 class="project-title">Lift Your Hands and Voices</h1>
+        <p class="project-year">Installation and performance, 2024</p>
+      </div>
+
+      <div class="project-grid">
+        <img src="../images/ravestoolsittingf.jpeg" alt="Lift Your Hands And Voices installation">
+        <img src="../images/hypha3.jpg" alt="Installation close-up">
+        <img src="../images/hypha4.jpg" alt="Installation spatial view">
+      </div>
+      <script>
+        // Pause other audio/video when one plays
+        document.addEventListener('play', function(e) {
+          const media = document.querySelectorAll('audio, video');
+          media.forEach(function(el) {
+            if (el !== e.target) el.pause();
+          });
+        }, true);
+      </script>
+
+      <div class="media-block">
+        <p class="media-block-caption">Audio excerpt from installation, Hypha Studios, Marble Arch (2024)</p>
+        <audio controls preload="none">
+          <source src="../audio/ravestools-excerpt.mp4" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="project-description">
+        <p>
+          Lift Your Hands and Voices is an installation and performance work presented at Hypha Studios as part of Land(e)scapes 2, a group exhibition exploring ecology, fiction, and theatricality through material culture and ecological awareness.</p>
+        <p>
+The work consists of three handmade stools constructed from scaffolding wood, designed and built by the artist. Each stool bears an engraved text fragment, alongside a cut through the surface with a single line, that reads as both inscription and fracture. The words, when combined, reference a lyric from an early 1990s underground rave track — there will be no armageddon — but can be read and rearranged in multiple sequences.
+</p>
+        <p>
+Each stool was paired with two small speakers positioned nearby, playing short audio excerpts in which lyrics from 1990s rave culture were reworked as sea shanties, performed on guitar in layered voices. Which would appear like lost memories after long pauses. The work draws a parallel between song as a form of collective labour and song as a space of release and resistance, connecting maritime working traditions with the communal and political dimensions of rave culture.
+</p>
+        <p>
+The installation reflects on the erosion of spaces for collective gathering and shared experience, using sound, furniture, and performance to propose song as a temporary commons — a place where bodies assemble, labour is shared, and alternative social relations briefly come into being.
+</p>
+        <p>
+The work was activated through a live performance in which musicians sat on the stools and performed the ‘rave sea shanties’ together, further collapsing the boundaries between sculpture, audience, and action.
+
+        </p>
+      </div>
+
+      <p class="project-context">
+        [Venue name, city, year. Partner organisation if applicable.]
+      </p>
+
+      <a href="../work.html" class="back-link">Back to Selected Work</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; Toby Tobias Kidd</p>
+    </footer>
+  </div>
+</body>
+</html>
