@@ -189,6 +189,7 @@ a:hover {
   line-height: 1.7;
   max-width: var(--max-width-text);
   color: var(--color-text-muted);
+  margin-top: var(--spacing-md);
   margin-bottom: var(--spacing-md);
 }
 
@@ -442,6 +443,20 @@ a:hover {
 /* Ensure only one media plays at a time */
 .media-block audio::-webkit-media-controls-panel {
   background-color: var(--color-bg);
+}
+
+.project-credits {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+  max-width: var(--max-width-text);
+}
+
+.project-credits p {
+  margin-bottom: 0.25em;
 }
 
 .project-description {
