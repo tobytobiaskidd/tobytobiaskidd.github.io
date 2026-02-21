@@ -132,7 +132,7 @@ a:hover {
 
 .site-footer {
   padding: var(--spacing-md);
-  padding-top: var(--spacing-md);
+  padding-top: var(--spacing-xs);
   font-size: 0.8125rem;
   color: var(--color-text-muted);
 }
@@ -240,8 +240,8 @@ a:hover {
 
 .work-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-md);
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
   max-width: var(--max-width);
 }
 
@@ -317,15 +317,14 @@ a:hover {
 /* Project image grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-xs);
+  grid-template-columns: 1fr;
+  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-md);
 }
 
 .project-grid img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
 }
@@ -333,6 +332,11 @@ a:hover {
 @media (min-width: 640px) {
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xs);
+  }
+
+  .project-grid img {
+    aspect-ratio: 4 / 3;
   }
 }
 
@@ -526,8 +530,8 @@ a:hover {
 /* Responsive */
 @media (min-width: 640px) {
   .work-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-sm);
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
   }
 }
 
